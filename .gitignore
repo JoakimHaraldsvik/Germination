@@ -4,3 +4,5 @@ pictures_germination_2025
 pictures_germination_2025.zip
 Cropped_germination_pictures.zip
 Cropped_germination_pictures
+#Ignore data files
+Germination_workspace.code-workspace
