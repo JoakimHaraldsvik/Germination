@@ -1,0 +1,12 @@
+Activated a virtual environment with the command [.venv\Scripts\Activate.ps1]
+    To enable the virtual environment.
+    The environment is needed to fix issues with conflicting versions of multiple
+    python packages.
+
+At the first setup, the packages need to be installed in powershell with:
+    python -m pip install --upgrade pip
+    python -m pip install matplotlib seaborn opencv-python pandas numpy openpyxl
+
+Selecting the virtual environment in the notebook in VS Code:
+    Open the notebook and click on the kernel name in the top right corner of the notebook interface.
+    Select the virtual environment from the list of available kernels.
