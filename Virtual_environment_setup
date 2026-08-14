@@ -10,3 +10,42 @@ At the first setup, the packages need to be installed in powershell with:
 Selecting the virtual environment in the notebook in VS Code:
     Open the notebook and click on the kernel name in the top right corner of the notebook interface.
     Select the virtual environment from the list of available kernels.
+
+The following is a GPT-5 mini answer to pip in powershell:
+    I'll explain the command step‑by‑step and give a short recommendation.
+
+- **Command:** `python -m pip install --upgrade pip`
+
+- **`python`:** invokes the chosen Python interpreter. Using it ensures commands run with that interpreter
+    (and its venv) instead of a possibly different `pip` on PATH.
+
+- **`-m pip`:** runs the `pip` module as a script (`python -m <module>`). This guarantees you use the `pip`
+   bundled with that Python interpreter/virtualenv (avoids mismatched `pip` executables).
+
+- **`install`:** pip subcommand that installs packages into the active environment.
+
+- **`--upgrade`:** tells pip to upgrade any already‑installed matching package to the newest available
+    release (fetches the latest from PyPI).
+
+- **`pip` (final token):** the package name to install/upgrade — here pip upgrades itself.
+
+- **What pip does internally:** resolves dependencies, downloads a wheel or sdist, builds if needed
+   (may require build tools), uninstalls/replaces older files, and updates installation metadata in the environment.
+
+- **Windows note:** on Windows pip may attempt to overwrite scripts in-use; using `python -m pip` still avoids many
+  issues. If you hit a replace/permission error, re-run after closing Python processes or upgrade at venv creation time.
+
+- **When to run it:** not required every session. Recommended times:
+  - Once when you create a new virtual environment (helps avoid build/wheel issues).
+  - When `pip` is old and you see install/build errors (or you need a newer pip feature).
+  - Periodically for maintenance or before installing complex packages (e.g., scientific packages).
+
+- **Quick checks / useful commands:**
+  - Check current pip version: `python -m pip --version`
+  - Upgrade pip (and common helpers) once per venv:  
+    `python -m pip install --upgrade pip setuptools wheel`
+  - If you only need a package, you can usually skip upgrading pip and just run:  
+    `python -m pip install <package>`
+
+- **Short recommendation:** Run `python -m pip install --upgrade pip setuptools wheel` once after creating
+  or activating a venv. You don’t need to run it every new session unless you encounter problems or specifically want the latest pip.
