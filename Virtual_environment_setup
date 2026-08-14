@@ -6,6 +6,7 @@ Activated a virtual environment with the command [.venv\Scripts\Activate.ps1]
 At the first setup, the packages need to be installed in powershell with:
     python -m pip install --upgrade pip
     python -m pip install matplotlib seaborn opencv-python pandas numpy openpyxl
+    When a requirements.txt exist, the "pip install -r requirements.txt" in the terminal.
 
 Selecting the virtual environment in the notebook in VS Code:
     Open the notebook and click on the kernel name in the top right corner of the notebook interface.
