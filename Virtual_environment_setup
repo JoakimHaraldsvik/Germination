@@ -1,10 +1,15 @@
+Initiate a venv:
+  In terminal: python3 -m venv .venv
+Activate the venv:
+  In terminal: source s.venv/bin/activates
+
 Activated a virtual environment with the command [.venv\Scripts\Activate.ps1]
     To enable the virtual environment.
     The environment is needed to fix issues with conflicting versions of multiple
     python packages.
 
 At the first setup, the packages need to be installed in powershell with:
-    python -m pip install --upgrade pip
+    python -m pip install --upgrade pips
     python -m pip install matplotlib seaborn opencv-python pandas numpy openpyxl
     When a requirements.txt exist, the "pip install -r requirements.txt" in the terminal.
     To update the requirments with any new packages in powershell "python -m pip freeze > requirments.txt"
