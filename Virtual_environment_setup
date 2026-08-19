@@ -1,7 +1,7 @@
 Initiate a venv:
   In terminal: python3 -m venv .venv
 Activate the venv:
-  In terminal: source s.venv/bin/activates
+  In terminal: source .venv/bin/activate
 
 Activated a virtual environment with the command [.venv\Scripts\Activate.ps1]
     To enable the virtual environment.

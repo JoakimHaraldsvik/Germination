@@ -8,3 +8,5 @@ Cropped_germination_pictures
 Germination_workspace.code-workspace
 Master_Genetikk_og_utviklingsbiologi.code-workspace
 Germination.code-workspace
+#Ignore MacOS spesific files
+.DS_Store
