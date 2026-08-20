@@ -10,3 +10,4 @@ Master_Genetikk_og_utviklingsbiologi.code-workspace
 Germination.code-workspace
 #Ignore MacOS spesific files
 .DS_Store
+.ipynb_checkpoints
